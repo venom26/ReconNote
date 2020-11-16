@@ -44,7 +44,7 @@ RUN ./chromium-latest-linux/update.sh && ln -s /opt/chromium/chromium-latest-lin
 ## install deksterecon
 WORKDIR /
 RUN apt-get -y install wget sudo
-ADD https://api.github.com/repos/0xdekster/deksterecon/git/refs/heads/master version.json
+ADD https://api.github.com/repos/venom26/deksterecon/git/refs/heads/master version.json
 RUN git clone -b master https://github.com/venom26/deksterecon.git
 RUN echo "Cloned deksterecon.git"
 RUN (cd deksterecon && echo "HEAD is at `git rev-parse HEAD`")
